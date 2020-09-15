@@ -6,6 +6,7 @@ grumphp:
     tasks:
         composer:
             strict: false
+        infection: ~
         paratest: ~
         phpcsfixer2:
             allow_risky: true
@@ -23,3 +24,4 @@ grumphp:
         phpstan:
             level: max
             configuration: "%phpstan.configuration%"
+        psalm: ~

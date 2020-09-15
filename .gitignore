@@ -1,0 +1,5 @@
+/bin
+/composer.lock
+/infection.log
+/src
+/vendor/

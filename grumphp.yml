@@ -1,12 +1,18 @@
+parameters:
+    infection.configuration: "./vendor/tool-shed/coding-conventions/infection.json.dist"
+    phpcsfixer2.configuration: "./vendor/tool-shed/coding-conventions/.php_cs.dist"
+    phpstan.configuration: "./vendor/tool-shed/coding-conventions/phpstan.neon.dist"
+    
 grumphp:
     tasks:
         composer:
             strict: false
-        infection: ~
+        infection:
+            configuration: "%infection.configuration%"
         paratest: ~
         phpcsfixer2:
             allow_risky: true
-            config: ".php_cs.dist"
+            config: "%phpcsfixer2.configuration%"
             config_contains_finder: true
             verbose: true
             diff: false
@@ -19,4 +25,4 @@ grumphp:
                     blacklist: [ var_dump, echo, print, dump, print_r, phpinfo ]
         phpstan:
             level: max
-            configuration: "phpstan.neon.dist"
+            configuration: "%phpstan.configuration%"

@@ -1,4 +1,5 @@
 {
+    "configDir": "./"
     "source": {
         "directories": [
             "src"

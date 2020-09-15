@@ -27,7 +27,7 @@
         "php-parallel-lint/php-parallel-lint": "^1.0",
         "phpro/grumphp": "^0.22",
         "phpstan/phpstan": "^0.12",
-        "phpunit/phpunit": "^9.0",
+        "phpunit/phpunit": "^8.0",
         "vimeo/psalm": "^3.0"
     },
     "require-dev": {

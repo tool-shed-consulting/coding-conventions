@@ -2,7 +2,7 @@ parameters:
     infection.configuration: "./vendor/tool-shed/coding-conventions/infection.json.dist"
     phpcsfixer2.configuration: "./vendor/tool-shed/coding-conventions/.php_cs.dist"
     phpstan.configuration: "./vendor/tool-shed/coding-conventions/phpstan.neon.dist"
-    
+
 grumphp:
     tasks:
         composer:
@@ -26,3 +26,4 @@ grumphp:
         phpstan:
             level: max
             configuration: "%phpstan.configuration%"
+        psalm: ~
